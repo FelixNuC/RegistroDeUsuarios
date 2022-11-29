@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="capa1">
+            <form action="">
+                <ul>
+                    <li style="--i:5;"><a href="#"><input type="button" class="boton" value="ALTAS" onclick="mostrarcapa2()"></a></li>
+                    <li style="--i:4;"><a href="#"><input type="button" class="boton" value="BAJAS"  onclick="mostrarcapa3()"></a></li>
+                    <li style="--i:3;"><a href="#"><input type="button" class="boton" value="CONSULTAS"  onclick="mostrarcapa4()"></a></li>
+                    <li style="--i:2;"><a href="#"><input type="button" class="boton"  value="MODIFICACIONES"  onclick="mostrarcapa5()"></a></li>
+                    <li style="--i:1;"><a href="#"><input type="button" class="boton" value="CERRAR APLICACION" onclick="cerraraplicacion()"></a></li>
+                </ul>
+            </form>
+        </div>
+        <div id="capa2">
+            <h1>Registro de Usuario</h1><br>
+            <form>
+                <label>Nif </label><input type="text" id="nif"><br><br>
+                <label>Nombre </label><input type="text" id="nombre">
+                <label> Apellido 1 </label><input type="text" id="apellido1">
+                <label> Apellido 2 </label><input type="text" id="apellido2"><br><br>
+                <label> Departamento </label> <input type="number" id="departamento">
+                <label> Antiguedad</label> <input type="number" id="antiguedad"><br><br>
+                <label> Telefono</label> <input type="text" id="telefono">
+                <label> Mail</label> <input type="email" name="mail" id="mail"><br><br>
+                <input type="button" value="ACEPTAR" onclick="recogerdatos();">
+            </form>
+        </div>
+        <div id="capa3">
+            <form>
+                <h1>BAJAS</h1>
+                <h1>Introduce el DNI/NIF del usuario a eliminar</h1><br>
+                <label></label><input type="text" id="consulta">
+                <input type="button" value="Eliminar" id="Eliminacion" onclick="eliminardatos();">
+            </form>
+        </div>
+        <div id="capa4">
+            <h1>Introduce el DNI-NIF/Apellido 1 del Usuario</h1><br>
+            <form>
+                <label></label><input type="text" id="consultaver">
+                <input type="button" value="Consultar" id="consultasver" onclick="ver();">
+                <div id="mostrarconsulta"></div>
+            </form>
+        </div>
+        <div id="capa5">
+            <h1>Modificaciones</h1>
+            <h1>Introduce el DNI/NIF del usuario a Modificar</h1><br>          
+            <form>
+                <label></label><input type="text" id="consultamod">
+                <input type="button" value="Modificar" id="Modificar" onclick="modificardatos();">
+            </form>
+        </div>
+                
+        
+        <script src="main2.js"></script>
+    </body>
+</html>
